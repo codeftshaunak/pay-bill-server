@@ -1,7 +1,6 @@
 // src/server.ts
 
-import app from './app';
-
+const app = require('./app.ts').default;
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
